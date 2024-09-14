@@ -1,0 +1,96 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('https://wallpapers.com/images/high/good-wallpaper-for-computer-hd-wallpaper-wallpaper-sn360huwncicng3t.webp') no-repeat center center fixed;
+    background-size: cover; /* Adjust this property as needed */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Auth Section Styling */
+#auth-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative; /* Ensure it is not overlapping other elements */
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Shop Section Styling */
+#shop-section {
+    text-align: center;
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+
+.item-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #fdbb2d;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b21f1f;
+    color: white;
+}
+
+/* Floating Cart Icon Styling */
+#floating-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    animation: float 3s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
